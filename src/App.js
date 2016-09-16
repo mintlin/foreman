@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PlanPage from './components/planPage';
 
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
           Knockout the Estimates.
         </p>
         <button>Enter</button>
+
+        <PlanPage />
+
       </div>
     );
   }
