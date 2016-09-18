@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../css/App.css';
 //import PlanPage from './components/planPage';
-import Header from './components/header';
-import LeftMenu from './components/leftMenu';
-import DocoDB from './data/documentDB';
+import Header from './header';
+import LeftMenu from './leftMenu';
+import DocoDB from '../data/documentDB';
 
 class App extends Component {
   constructor() {
