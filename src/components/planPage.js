@@ -1,3 +1,9 @@
+import React from 'react';
+
+const PlanPage = (props) => <div>Plan Page</div>;
+
+export default PlanPage;
+
 // import React, {Component, PropTypes} from 'react';
 // import ReactDataGrid from 'react-data-grid';
 

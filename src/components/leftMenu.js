@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const LeftMenu = (props) => {
     const renderCategory = (category) => {
@@ -11,6 +12,7 @@ const LeftMenu = (props) => {
     }
     return (
         <div className='NavMenu'>
+            <Link to='/plan'>Go to Plan</Link>
             <ul>
                 {props.categories.map(renderCategory) }
             </ul>
