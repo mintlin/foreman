@@ -3,10 +3,10 @@ import React from 'react';
 const LeftMenu = (props) => {
     const renderCategory = (category) => {
         return (
-            <div key={category.id}>
+            <li key={category.id}>
                 <div>{category.name}</div>
                 <div>{category.categories.map(renderCategory) }</div>
-            </div>
+            </li>
         );
     }
     return (

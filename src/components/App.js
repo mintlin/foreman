@@ -17,12 +17,15 @@ class App extends Component {
   onClick() {
 
   }
-  
+
   render() {
     return (
       <div className="App">
         <Header />
         <LeftMenu categories={DocoDB.categories} onClick={this.onClick}/>
+        <div className="MainBody">
+          {this.props.children}
+        </div>
       </div>
     );
   }
