@@ -16,8 +16,8 @@ class App extends Component {
     this.handleToolBarMenuItemChange = this.handleToolBarMenuItemChange.bind(this);
     this.state = {
       categories: [],
-      toolBarSelectedMenuItem: 0
-    }
+      toolBarSelectedMenuItem: 0      
+    };
   }
 
   onClick() {

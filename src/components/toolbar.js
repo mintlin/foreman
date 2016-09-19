@@ -9,6 +9,7 @@ import DropDownMenu from 'material-ui/DropDownMenu';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import DialogModal from './folderDialog';
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
@@ -47,7 +48,7 @@ const ToolBar = (props) => {
                 <ToolbarTitle text="Options" />
                 <FontIcon className="muidocs-icon-custom-sort" />
                 <ToolbarSeparator />
-                { showCreateDelete(props.selectedMenuItem) ? <RaisedButton id="raisedButtonCreate" label="Create" primary={true} /> : null}
+                { showCreateDelete(props.selectedMenuItem) ? <DialogModal id="raisedButtonCreate" label="Create" primary={true} /> : null}
                 { showCreateDelete(props.selectedMenuItem) ? <RaisedButton id="raisedButtonDelete" label="Delete" secondary={true} disabled={true} /> : null}
                 { showImportExportSettings(props.selectedMenuItem) ? <RaisedButton id="raisedButtonImportSettings" label="Import Settings" primary={true} /> : null}
                 { showImportExportSettings(props.selectedMenuItem) ? <RaisedButton id="raisedButtonExportSettings" label="Export Settings" secondary={true} /> : null}
