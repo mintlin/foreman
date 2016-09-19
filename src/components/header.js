@@ -3,16 +3,13 @@ import logo from '../images/logo.svg';
 
 const Header = (props) => {
     return (
-    <div>
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to ForeMan</h2>
-          <p className="App-intro">
-          It Knocks out the Estimates.
-        </p>
+        <div>
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                Welcome to ForeMan <span className="App-intro">It Knocks out the Estimates.</span>
+            </div>
+
         </div>
-       
-    </div>
     );
 };
 
