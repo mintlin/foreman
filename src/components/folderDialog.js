@@ -6,7 +6,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 /**
  * A modal dialog can only be closed by selecting one of the actions.
  */
-export default class DialogExampleModal extends React.Component {
+export default class DialogModal extends React.Component {
     constructor() {
         super();
         this.handleClose = this.handleClose.bind(this);
